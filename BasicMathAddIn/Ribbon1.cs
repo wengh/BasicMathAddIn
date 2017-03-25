@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using Microsoft.Office.Tools.Ribbon;
 
 namespace BasicMathAddIn
@@ -70,9 +71,10 @@ namespace BasicMathAddIn
                     doc.Content.Text += s;
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(ex.Message);
+                //throw;
             }
         }
     }
