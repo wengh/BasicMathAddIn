@@ -11,4 +11,5 @@
 1. 下载并解压 "BasicMathAddIn.zip"
 1. 关闭 Microsoft Office
 1. 双击打开 "setup.bat"
-1. 弹出窗口后单击 "安装"
+
+[//]: # (1. 弹出窗口后单击 "安装")
