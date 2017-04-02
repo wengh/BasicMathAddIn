@@ -7,6 +7,8 @@ namespace BasicMathAddIn
 {
     public partial class Ribbon1
     {
+        Random rand = new Random();
+
         private void Ribbon1_Load (object sender, RibbonUIEventArgs e)
         {
         }
@@ -20,10 +22,26 @@ namespace BasicMathAddIn
                 doc.Content.Font.Size = 28;
                 doc.PageSetup.TextColumns.SetCount(2);
 
-                bool add = checkBox1.Checked;
-                bool sub = checkBox2.Checked;
-                if (!(add || sub))
+                var selected = new List<int>();
+                if (checkBox1.Checked)
                 {
+                    selected.Add(0);
+                }
+                if (checkBox2.Checked)
+                {
+                    selected.Add(1);
+                }
+                if (checkBox3.Checked)
+                {
+                    selected.Add(2);
+                }
+                if (checkBox4.Checked)
+                {
+                    selected.Add(3);
+                }
+                if (selected.Count == 0)
+                {
+                    MessageBox.Show("请选择至少一种题目");
                     return;
                 }
                 int pages = Convert.ToInt16(editBox2.Text);
@@ -32,33 +50,42 @@ namespace BasicMathAddIn
                 int minA = Math.Min(Convert.ToInt16(editBox3.Text), maxA);
                 int maxS = 1 + Convert.ToInt16(editBox4.Text);
                 int minS = Math.Min(Convert.ToInt16(editBox5.Text), maxS);
+                int maxM = 1 + Convert.ToInt16(editBox6.Text);
+                int minM = Math.Min(Convert.ToInt16(editBox7.Text), maxS);
+                int maxD = 1 + Convert.ToInt16(editBox8.Text);
+                int minD = Math.Max(Math.Min(Convert.ToInt16(editBox9.Text), maxS), 1);
                 var lst = new List<string>();
-                var rand = new Random();
 
                 for (int i = 0; i < length; i++)
                 {
                     int type;
-                    if (add && sub)
+                    type = selected[rand.Next(selected.Count)];
+                    int result, val1, val2;
+                    switch (type)
                     {
-                        type = rand.Next(0, 2);
-                    }
-                    else
-                    {
-                        type = add ? 0 : 1;
-                    }
+                        case 0:
+                            result = rand.Next(minA, maxA);
+                            val1 = rand.Next(result + 1);
+                            val2 = result - val1;
+                            lst.Add(string.Format("{0} + {1} = ", val1, val2));
+                            break;
 
-                    if (type == 0)
-                    {
-                        int result = rand.Next(minA, maxA);
-                        int val1 = rand.Next(result + 1);
-                        int val2 = result - val1;
-                        lst.Add(string.Format("{0} + {1} = ", val1, val2));
-                    }
-                    else
-                    {
-                        int val1 = rand.Next(minS, maxS);
-                        int val2 = rand.Next(val1 + 1);
-                        lst.Add(string.Format("{0} - {1} = ", val1, val2));
+                        case 1:
+                            val1 = rand.Next(minS, maxS);
+                            val2 = rand.Next(val1 + 1);
+                            lst.Add(string.Format("{0} - {1} = ", val1, val2));
+                            break;
+                        case 2:
+                            val1 = rand.Next(minM, maxM);
+                            val2 = rand.Next(minM, maxM);
+                            lst.Add(string.Format("{0} × {1} = ", val1, val2));
+                            break;
+                        case 3:
+                            val1 = rand.Next(minD, maxD);
+                            val2 = rand.Next(minD, maxD);
+                            result = val1 * val2;
+                            lst.Add(string.Format("{0} ÷ {1} = ", result, val1));
+                            break;
                     }
                 }
                 string s = string.Join("\n", lst);

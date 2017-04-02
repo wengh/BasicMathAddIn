@@ -50,10 +50,20 @@
             this.group3 = this.Factory.CreateRibbonGroup();
             this.editBox4 = this.Factory.CreateRibbonEditBox();
             this.editBox5 = this.Factory.CreateRibbonEditBox();
+            this.group4 = this.Factory.CreateRibbonGroup();
+            this.editBox6 = this.Factory.CreateRibbonEditBox();
+            this.editBox7 = this.Factory.CreateRibbonEditBox();
+            this.checkBox3 = this.Factory.CreateRibbonCheckBox();
+            this.group5 = this.Factory.CreateRibbonGroup();
+            this.editBox8 = this.Factory.CreateRibbonEditBox();
+            this.editBox9 = this.Factory.CreateRibbonEditBox();
+            this.checkBox4 = this.Factory.CreateRibbonCheckBox();
             this.tab1.SuspendLayout();
             this.group2.SuspendLayout();
             this.group1.SuspendLayout();
             this.group3.SuspendLayout();
+            this.group4.SuspendLayout();
+            this.group5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -62,6 +72,8 @@
             this.tab1.Groups.Add(this.group2);
             this.tab1.Groups.Add(this.group1);
             this.tab1.Groups.Add(this.group3);
+            this.tab1.Groups.Add(this.group4);
+            this.tab1.Groups.Add(this.group5);
             resources.ApplyResources(this.tab1, "tab1");
             this.tab1.Name = "tab1";
             // 
@@ -72,6 +84,8 @@
             this.group2.Items.Add(this.checkBox1);
             this.group2.Items.Add(this.checkBox2);
             this.group2.Items.Add(this.dropDown1);
+            this.group2.Items.Add(this.checkBox3);
+            this.group2.Items.Add(this.checkBox4);
             resources.ApplyResources(this.group2, "group2");
             this.group2.Name = "group2";
             // 
@@ -91,6 +105,7 @@
             // 
             // checkBox1
             // 
+            this.checkBox1.Checked = true;
             resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Name = "checkBox1";
             // 
@@ -143,6 +158,50 @@
             resources.ApplyResources(this.editBox5, "editBox5");
             this.editBox5.Name = "editBox5";
             // 
+            // group4
+            // 
+            this.group4.Items.Add(this.editBox6);
+            this.group4.Items.Add(this.editBox7);
+            resources.ApplyResources(this.group4, "group4");
+            this.group4.Name = "group4";
+            // 
+            // editBox6
+            // 
+            resources.ApplyResources(this.editBox6, "editBox6");
+            this.editBox6.Name = "editBox6";
+            // 
+            // editBox7
+            // 
+            resources.ApplyResources(this.editBox7, "editBox7");
+            this.editBox7.Name = "editBox7";
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            // 
+            // group5
+            // 
+            this.group5.Items.Add(this.editBox8);
+            this.group5.Items.Add(this.editBox9);
+            resources.ApplyResources(this.group5, "group5");
+            this.group5.Name = "group5";
+            // 
+            // editBox8
+            // 
+            resources.ApplyResources(this.editBox8, "editBox8");
+            this.editBox8.Name = "editBox8";
+            // 
+            // editBox9
+            // 
+            resources.ApplyResources(this.editBox9, "editBox9");
+            this.editBox9.Name = "editBox9";
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
+            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -157,6 +216,10 @@
             this.group1.PerformLayout();
             this.group3.ResumeLayout(false);
             this.group3.PerformLayout();
+            this.group4.ResumeLayout(false);
+            this.group4.PerformLayout();
+            this.group5.ResumeLayout(false);
+            this.group5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -176,6 +239,14 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox4;
         internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox5;
         internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dropDown1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group4;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox6;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox7;
+        internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox checkBox3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group5;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox8;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox9;
+        internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox checkBox4;
     }
 
     partial class ThisRibbonCollection

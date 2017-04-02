@@ -124,7 +124,7 @@
     <value>button1</value>
   </data>
   <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>group2</value>
@@ -142,7 +142,7 @@
     <value>editBox2</value>
   </data>
   <data name="&gt;&gt;editBox2.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;editBox2.Parent" xml:space="preserve">
     <value>group2</value>
@@ -157,7 +157,7 @@
     <value>checkBox1</value>
   </data>
   <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.CheckBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.CheckBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
     <value>group2</value>
@@ -172,7 +172,7 @@
     <value>checkBox2</value>
   </data>
   <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.CheckBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.CheckBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
     <value>group2</value>
@@ -193,13 +193,43 @@
     <value>dropDown1</value>
   </data>
   <data name="&gt;&gt;dropDown1.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.DropDownView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.DropDownView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;dropDown1.Parent" xml:space="preserve">
     <value>group2</value>
   </data>
   <data name="&gt;&gt;dropDown1.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="checkBox3.Label" xml:space="preserve">
+    <value>乘法</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.CheckBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>group2</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBox4.Label" xml:space="preserve">
+    <value>除法</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.CheckBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>group2</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="group2.Label" xml:space="preserve">
     <value>生成</value>
@@ -208,7 +238,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;group2.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;group2.Parent" xml:space="preserve">
     <value>tab1</value>
@@ -226,7 +256,7 @@
     <value>editBox1</value>
   </data>
   <data name="&gt;&gt;editBox1.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;editBox1.Parent" xml:space="preserve">
     <value>group1</value>
@@ -244,7 +274,7 @@
     <value>editBox3</value>
   </data>
   <data name="&gt;&gt;editBox3.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;editBox3.Parent" xml:space="preserve">
     <value>group1</value>
@@ -259,7 +289,7 @@
     <value>group1</value>
   </data>
   <data name="&gt;&gt;group1.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;group1.Parent" xml:space="preserve">
     <value>tab1</value>
@@ -277,7 +307,7 @@
     <value>editBox4</value>
   </data>
   <data name="&gt;&gt;editBox4.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;editBox4.Parent" xml:space="preserve">
     <value>group3</value>
@@ -295,7 +325,7 @@
     <value>editBox5</value>
   </data>
   <data name="&gt;&gt;editBox5.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;editBox5.Parent" xml:space="preserve">
     <value>group3</value>
@@ -310,13 +340,115 @@
     <value>group3</value>
   </data>
   <data name="&gt;&gt;group3.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;group3.Parent" xml:space="preserve">
     <value>tab1</value>
   </data>
   <data name="&gt;&gt;group3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="editBox6.Label" xml:space="preserve">
+    <value>最大乘数</value>
+  </data>
+  <data name="editBox6.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;editBox6.Name" xml:space="preserve">
+    <value>editBox6</value>
+  </data>
+  <data name="&gt;&gt;editBox6.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;editBox6.Parent" xml:space="preserve">
+    <value>group4</value>
+  </data>
+  <data name="&gt;&gt;editBox6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="editBox7.Label" xml:space="preserve">
+    <value>最小乘数</value>
+  </data>
+  <data name="editBox7.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;editBox7.Name" xml:space="preserve">
+    <value>editBox7</value>
+  </data>
+  <data name="&gt;&gt;editBox7.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;editBox7.Parent" xml:space="preserve">
+    <value>group4</value>
+  </data>
+  <data name="&gt;&gt;editBox7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="group4.Label" xml:space="preserve">
+    <value>乘法</value>
+  </data>
+  <data name="&gt;&gt;group4.Name" xml:space="preserve">
+    <value>group4</value>
+  </data>
+  <data name="&gt;&gt;group4.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;group4.Parent" xml:space="preserve">
+    <value>tab1</value>
+  </data>
+  <data name="&gt;&gt;group4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="editBox8.Label" xml:space="preserve">
+    <value>最大除数/商</value>
+  </data>
+  <data name="editBox8.Text" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;editBox8.Name" xml:space="preserve">
+    <value>editBox8</value>
+  </data>
+  <data name="&gt;&gt;editBox8.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;editBox8.Parent" xml:space="preserve">
+    <value>group5</value>
+  </data>
+  <data name="&gt;&gt;editBox8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="editBox9.Label" xml:space="preserve">
+    <value>最小除数/商</value>
+  </data>
+  <data name="editBox9.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;editBox9.Name" xml:space="preserve">
+    <value>editBox9</value>
+  </data>
+  <data name="&gt;&gt;editBox9.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;editBox9.Parent" xml:space="preserve">
+    <value>group5</value>
+  </data>
+  <data name="&gt;&gt;editBox9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="group5.Label" xml:space="preserve">
+    <value>除法</value>
+  </data>
+  <data name="&gt;&gt;group5.Name" xml:space="preserve">
+    <value>group5</value>
+  </data>
+  <data name="&gt;&gt;group5.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;group5.Parent" xml:space="preserve">
+    <value>tab1</value>
+  </data>
+  <data name="&gt;&gt;group5.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tab1.Label" xml:space="preserve">
     <value>算式生成</value>
@@ -325,7 +457,7 @@
     <value>tab1</value>
   </data>
   <data name="&gt;&gt;tab1.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.TabView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.TabView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -334,7 +466,7 @@
     <value>Ribbon1.OfficeMenu</value>
   </data>
   <data name="&gt;&gt;Ribbon1.OfficeMenu.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.OfficeMenuView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.OfficeMenuView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;Ribbon1.OfficeMenu.Parent" xml:space="preserve">
     <value>$this</value>
@@ -346,6 +478,6 @@
     <value>Ribbon1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GenericRibbonView, microsoft.visualstudio.tools.office.designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GenericRibbonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
