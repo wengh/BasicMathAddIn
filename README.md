@@ -1,4 +1,4 @@
-﻿# BasicMathAddIn
+# BasicMathAddIn
 ### 算式生成 Word 插件
 -----
 ##### [下载](https://github.com/Why7090/BasicMathAddIn/releases/latest)
