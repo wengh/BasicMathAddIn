@@ -13,7 +13,7 @@
             InitializeComponent();
         }
 
-        /// <summary> 
+        /// <summary>
         /// 清理所有正在使用的资源。
         /// </summary>
         /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
@@ -40,10 +40,13 @@
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group2 = this.Factory.CreateRibbonGroup();
             this.button1 = this.Factory.CreateRibbonButton();
+            this.separator1 = this.Factory.CreateRibbonSeparator();
             this.editBox2 = this.Factory.CreateRibbonEditBox();
             this.checkBox1 = this.Factory.CreateRibbonCheckBox();
             this.checkBox2 = this.Factory.CreateRibbonCheckBox();
             this.dropDown1 = this.Factory.CreateRibbonDropDown();
+            this.checkBox3 = this.Factory.CreateRibbonCheckBox();
+            this.checkBox4 = this.Factory.CreateRibbonCheckBox();
             this.group1 = this.Factory.CreateRibbonGroup();
             this.editBox1 = this.Factory.CreateRibbonEditBox();
             this.editBox3 = this.Factory.CreateRibbonEditBox();
@@ -53,17 +56,23 @@
             this.group4 = this.Factory.CreateRibbonGroup();
             this.editBox6 = this.Factory.CreateRibbonEditBox();
             this.editBox7 = this.Factory.CreateRibbonEditBox();
-            this.checkBox3 = this.Factory.CreateRibbonCheckBox();
             this.group5 = this.Factory.CreateRibbonGroup();
             this.editBox8 = this.Factory.CreateRibbonEditBox();
             this.editBox9 = this.Factory.CreateRibbonEditBox();
-            this.checkBox4 = this.Factory.CreateRibbonCheckBox();
+            this.group6 = this.Factory.CreateRibbonGroup();
+            this.editBox10 = this.Factory.CreateRibbonEditBox();
+            this.button2 = this.Factory.CreateRibbonButton();
+            this.separator2 = this.Factory.CreateRibbonSeparator();
+            this.dropDown2 = this.Factory.CreateRibbonDropDown();
+            this.button4 = this.Factory.CreateRibbonButton();
+            this.button3 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group2.SuspendLayout();
             this.group1.SuspendLayout();
             this.group3.SuspendLayout();
             this.group4.SuspendLayout();
             this.group5.SuspendLayout();
+            this.group6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -74,12 +83,14 @@
             this.tab1.Groups.Add(this.group3);
             this.tab1.Groups.Add(this.group4);
             this.tab1.Groups.Add(this.group5);
+            this.tab1.Groups.Add(this.group6);
             resources.ApplyResources(this.tab1, "tab1");
             this.tab1.Name = "tab1";
             // 
             // group2
             // 
             this.group2.Items.Add(this.button1);
+            this.group2.Items.Add(this.separator1);
             this.group2.Items.Add(this.editBox2);
             this.group2.Items.Add(this.checkBox1);
             this.group2.Items.Add(this.checkBox2);
@@ -97,6 +108,10 @@
             this.button1.Name = "button1";
             this.button1.ShowImage = true;
             this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
+            // 
+            // separator1
+            // 
+            this.separator1.Name = "separator1";
             // 
             // editBox2
             // 
@@ -123,6 +138,16 @@
             resources.ApplyResources(this.dropDown1, "dropDown1");
             this.dropDown1.Name = "dropDown1";
             this.dropDown1.ShowItemImage = false;
+            // 
+            // checkBox3
+            // 
+            resources.ApplyResources(this.checkBox3, "checkBox3");
+            this.checkBox3.Name = "checkBox3";
+            // 
+            // checkBox4
+            // 
+            resources.ApplyResources(this.checkBox4, "checkBox4");
+            this.checkBox4.Name = "checkBox4";
             // 
             // group1
             // 
@@ -175,11 +200,6 @@
             resources.ApplyResources(this.editBox7, "editBox7");
             this.editBox7.Name = "editBox7";
             // 
-            // checkBox3
-            // 
-            resources.ApplyResources(this.checkBox3, "checkBox3");
-            this.checkBox3.Name = "checkBox3";
-            // 
             // group5
             // 
             this.group5.Items.Add(this.editBox8);
@@ -197,10 +217,48 @@
             resources.ApplyResources(this.editBox9, "editBox9");
             this.editBox9.Name = "editBox9";
             // 
-            // checkBox4
+            // group6
             // 
-            resources.ApplyResources(this.checkBox4, "checkBox4");
-            this.checkBox4.Name = "checkBox4";
+            this.group6.Items.Add(this.editBox10);
+            this.group6.Items.Add(this.button2);
+            this.group6.Items.Add(this.separator2);
+            this.group6.Items.Add(this.dropDown2);
+            this.group6.Items.Add(this.button4);
+            this.group6.Items.Add(this.button3);
+            resources.ApplyResources(this.group6, "group6");
+            this.group6.Name = "group6";
+            // 
+            // editBox10
+            // 
+            resources.ApplyResources(this.editBox10, "editBox10");
+            this.editBox10.Name = "editBox10";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Save);
+            // 
+            // separator2
+            // 
+            this.separator2.Name = "separator2";
+            // 
+            // dropDown2
+            // 
+            resources.ApplyResources(this.dropDown2, "dropDown2");
+            this.dropDown2.Name = "dropDown2";
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.LoadPref);
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.RemovePref);
             // 
             // Ribbon1
             // 
@@ -220,6 +278,8 @@
             this.group4.PerformLayout();
             this.group5.ResumeLayout(false);
             this.group5.PerformLayout();
+            this.group6.ResumeLayout(false);
+            this.group6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -247,6 +307,14 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox8;
         internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox9;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox checkBox4;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group6;
+        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button2;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox10;
+        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator separator2;
+        internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dropDown2;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button4;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button3;
     }
 
     partial class ThisRibbonCollection

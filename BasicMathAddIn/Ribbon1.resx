@@ -132,6 +132,18 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;separator1.Name" xml:space="preserve">
+    <value>separator1</value>
+  </data>
+  <data name="&gt;&gt;separator1.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.SeparatorView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;separator1.Parent" xml:space="preserve">
+    <value>group2</value>
+  </data>
+  <data name="&gt;&gt;separator1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="editBox2.Label" xml:space="preserve">
     <value>页数</value>
   </data>
@@ -148,7 +160,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;editBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="checkBox1.Label" xml:space="preserve">
     <value>加法</value>
@@ -163,7 +175,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="checkBox2.Label" xml:space="preserve">
     <value>减法</value>
@@ -178,7 +190,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="ribbonDropDownItemImpl1.Label" xml:space="preserve">
     <value>覆盖</value>
@@ -199,7 +211,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;dropDown1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="checkBox3.Label" xml:space="preserve">
     <value>乘法</value>
@@ -214,7 +226,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="checkBox4.Label" xml:space="preserve">
     <value>除法</value>
@@ -229,7 +241,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="group2.Label" xml:space="preserve">
     <value>生成</value>
@@ -449,6 +461,112 @@
   </data>
   <data name="&gt;&gt;group5.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="editBox10.Label" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="editBox10.Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;editBox10.Name" xml:space="preserve">
+    <value>editBox10</value>
+  </data>
+  <data name="&gt;&gt;editBox10.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.EditBoxView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;editBox10.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;editBox10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button2.Label" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;separator2.Name" xml:space="preserve">
+    <value>separator2</value>
+  </data>
+  <data name="&gt;&gt;separator2.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.SeparatorView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;separator2.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;separator2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dropDown2.Label" xml:space="preserve">
+    <value>预设</value>
+  </data>
+  <data name="&gt;&gt;dropDown2.Name" xml:space="preserve">
+    <value>dropDown2</value>
+  </data>
+  <data name="&gt;&gt;dropDown2.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.DropDownView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;dropDown2.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;dropDown2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="button4.Label" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button3.Label" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="group6.Label" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="&gt;&gt;group6.Name" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;group6.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.GroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;group6.Parent" xml:space="preserve">
+    <value>tab1</value>
+  </data>
+  <data name="&gt;&gt;group6.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="tab1.Label" xml:space="preserve">
     <value>算式生成</value>

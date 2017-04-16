@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using Microsoft.Office.Tools.Ribbon;
 
@@ -8,9 +12,23 @@ namespace BasicMathAddIn
     public partial class Ribbon1
     {
         Random rand = new Random();
+        MathSettingsManager manager;
 
         private void Ribbon1_Load (object sender, RibbonUIEventArgs e)
         {
+            Properties.Settings.Default.Reload();
+            try
+            {
+                manager = MathSettingsManager.Deserialize(Properties.Settings.Default.Prefs);
+            }
+            catch
+            {
+                manager = new MathSettingsManager();
+                Properties.Settings.Default.Prefs = manager.Serialize();
+                Properties.Settings.Default.Save();
+                MessageBox.Show(Properties.Settings.Default.Prefs);
+            }
+            Refresh();
         }
 
         private void button1_Click (object sender, RibbonControlEventArgs e)
@@ -103,6 +121,151 @@ namespace BasicMathAddIn
                 MessageBox.Show(ex.Message);
                 //throw;
             }
+        }
+
+        private void Save (object sender, RibbonControlEventArgs e)
+        {
+            var s = new MathSettings();
+
+            s.Pages = editBox2.Text;
+            s.Mode = dropDown1.SelectedItemIndex;
+            s.Add = checkBox1.Checked;
+            s.Sub = checkBox2.Checked;
+            s.Mul = checkBox3.Checked;
+            s.Div = checkBox4.Checked;
+
+            s.MaxA = editBox1.Text;
+            s.MinA = editBox3.Text;
+            s.MaxS = editBox4.Text;
+            s.MinS = editBox5.Text;
+            s.MaxM = editBox6.Text;
+            s.MinM = editBox7.Text;
+            s.MaxD = editBox8.Text;
+            s.MinD = editBox9.Text;
+
+            manager.Add(editBox10.Text, s);
+            Refresh();
+        }
+
+        public void Refresh ()
+        {
+            if (manager != null)
+            {
+                Properties.Settings.Default.Prefs = manager.Serialize();
+                Properties.Settings.Default.Save();
+                Properties.Settings.Default.Upgrade();
+                dropDown2.Items.Clear();
+                foreach (string key in manager.Keys)
+                {
+                    RibbonDropDownItem item = Factory.CreateRibbonDropDownItem();
+                    item.Label = key;
+                    dropDown2.Items.Add(item);
+                }
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+        }
+
+        private void LoadPref (object sender, RibbonControlEventArgs e)
+        {
+            string name;
+            try
+            {
+                name = dropDown2.SelectedItem.Label;
+            }
+            catch (NullReferenceException)
+            {
+                return;
+            }
+            var s = manager[name];
+
+            editBox2.Text = s.Pages;
+            dropDown1.SelectedItemIndex = s.Mode;
+            checkBox1.Checked = s.Add;
+            checkBox2.Checked = s.Sub;
+            checkBox3.Checked = s.Mul;
+            checkBox4.Checked = s.Div;
+
+            editBox1.Text = s.MaxA;
+            editBox3.Text = s.MinA;
+            editBox4.Text = s.MaxS;
+            editBox5.Text = s.MinS;
+            editBox6.Text = s.MaxM;
+            editBox7.Text = s.MinM;
+            editBox8.Text = s.MaxD;
+            editBox9.Text = s.MinD;
+
+            editBox10.Text = name;
+        }
+
+        private void RemovePref (object sender, RibbonControlEventArgs e)
+        {
+            string name;
+            try
+            {
+                name = dropDown2.SelectedItem.Label;
+            }
+            catch (NullReferenceException)
+            {
+                return;
+            }
+            if (MessageBox.Show("是否删除“" + name + "”？", "警告", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                manager.Remove(name);
+                Refresh();
+            }
+        }
+    }
+
+    [Serializable]
+    public class MathSettings
+    {
+        public string Pages;
+        public int Mode;
+        public bool Add;
+        public bool Sub;
+        public bool Mul;
+        public bool Div;
+
+        public string MaxA;
+        public string MinA;
+        public string MaxS;
+        public string MinS;
+        public string MaxM;
+        public string MinM;
+        public string MaxD;
+        public string MinD;
+    }
+
+    [Serializable]
+    public class MathSettingsManager : Dictionary<string, MathSettings>
+    {
+        public string Serialize ()
+        {
+            using (MemoryStream stream = new MemoryStream())
+            {
+                new BinaryFormatter().Serialize(stream, this);
+                return Convert.ToBase64String(stream.ToArray());
+            }
+        }
+
+        public static MathSettingsManager Deserialize (string str)
+        {
+            byte[] bytes = Convert.FromBase64String(str);
+
+            using (MemoryStream stream = new MemoryStream(bytes))
+            {
+                return new BinaryFormatter().Deserialize(stream) as MathSettingsManager;
+            }
+        }
+
+        public MathSettingsManager () { }
+
+        protected MathSettingsManager (SerializationInfo info, StreamingContext context)
+            : base(info, context)
+        {
         }
     }
 }
