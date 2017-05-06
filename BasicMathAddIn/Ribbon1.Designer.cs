@@ -34,12 +34,11 @@
         /// </summary>
         private void InitializeComponent ()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ribbon1));
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl1 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl2 = this.Factory.CreateRibbonDropDownItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ribbon1));
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group2 = this.Factory.CreateRibbonGroup();
-            this.button1 = this.Factory.CreateRibbonButton();
             this.separator1 = this.Factory.CreateRibbonSeparator();
             this.editBox2 = this.Factory.CreateRibbonEditBox();
             this.checkBox1 = this.Factory.CreateRibbonCheckBox();
@@ -64,8 +63,11 @@
             this.button2 = this.Factory.CreateRibbonButton();
             this.separator2 = this.Factory.CreateRibbonSeparator();
             this.dropDown2 = this.Factory.CreateRibbonDropDown();
+            this.buttonGroup1 = this.Factory.CreateRibbonButtonGroup();
             this.button4 = this.Factory.CreateRibbonButton();
             this.button3 = this.Factory.CreateRibbonButton();
+            this.button1 = this.Factory.CreateRibbonButton();
+            this.button5 = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group2.SuspendLayout();
             this.group1.SuspendLayout();
@@ -73,6 +75,7 @@
             this.group4.SuspendLayout();
             this.group5.SuspendLayout();
             this.group6.SuspendLayout();
+            this.buttonGroup1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
@@ -90,6 +93,7 @@
             // group2
             // 
             this.group2.Items.Add(this.button1);
+            this.group2.Items.Add(this.button5);
             this.group2.Items.Add(this.separator1);
             this.group2.Items.Add(this.editBox2);
             this.group2.Items.Add(this.checkBox1);
@@ -99,15 +103,6 @@
             this.group2.Items.Add(this.checkBox4);
             resources.ApplyResources(this.group2, "group2");
             this.group2.Name = "group2";
-            // 
-            // button1
-            // 
-            this.button1.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.button1.Image = global::BasicMathAddIn.Properties.Resources.Dice_80px;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.ShowImage = true;
-            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
             // separator1
             // 
@@ -223,8 +218,7 @@
             this.group6.Items.Add(this.button2);
             this.group6.Items.Add(this.separator2);
             this.group6.Items.Add(this.dropDown2);
-            this.group6.Items.Add(this.button4);
-            this.group6.Items.Add(this.button3);
+            this.group6.Items.Add(this.buttonGroup1);
             resources.ApplyResources(this.group6, "group6");
             this.group6.Name = "group6";
             // 
@@ -248,6 +242,12 @@
             resources.ApplyResources(this.dropDown2, "dropDown2");
             this.dropDown2.Name = "dropDown2";
             // 
+            // buttonGroup1
+            // 
+            this.buttonGroup1.Items.Add(this.button4);
+            this.buttonGroup1.Items.Add(this.button3);
+            this.buttonGroup1.Name = "buttonGroup1";
+            // 
             // button4
             // 
             resources.ApplyResources(this.button4, "button4");
@@ -259,6 +259,24 @@
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.RemovePref);
+            // 
+            // button1
+            // 
+            this.button1.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.button1.Image = global::BasicMathAddIn.Properties.Resources.Dice_80px;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.ShowImage = true;
+            this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
+            // 
+            // button5
+            // 
+            this.button5.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.button5.Image = global::BasicMathAddIn.Properties.Resources.Equal_Sign_80px;
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.ShowImage = true;
+            this.button5.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button5_Click);
             // 
             // Ribbon1
             // 
@@ -280,6 +298,8 @@
             this.group5.PerformLayout();
             this.group6.ResumeLayout(false);
             this.group6.PerformLayout();
+            this.buttonGroup1.ResumeLayout(false);
+            this.buttonGroup1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -315,6 +335,8 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dropDown2;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button4;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button3;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button5;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButtonGroup buttonGroup1;
     }
 
     partial class ThisRibbonCollection

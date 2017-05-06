@@ -132,6 +132,21 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="button5.Label" xml:space="preserve">
+    <value>生成 答案</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>group2</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;separator1.Name" xml:space="preserve">
     <value>separator1</value>
   </data>
@@ -142,7 +157,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;separator1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="editBox2.Label" xml:space="preserve">
     <value>页数</value>
@@ -160,7 +175,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;editBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="checkBox1.Label" xml:space="preserve">
     <value>加法</value>
@@ -175,7 +190,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="checkBox2.Label" xml:space="preserve">
     <value>减法</value>
@@ -190,7 +205,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="ribbonDropDownItemImpl1.Label" xml:space="preserve">
     <value>覆盖</value>
@@ -211,7 +226,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;dropDown1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="checkBox3.Label" xml:space="preserve">
     <value>乘法</value>
@@ -226,7 +241,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="checkBox4.Label" xml:space="preserve">
     <value>除法</value>
@@ -241,7 +256,7 @@
     <value>group2</value>
   </data>
   <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="group2.Label" xml:space="preserve">
     <value>生成</value>
@@ -533,10 +548,10 @@
     <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;button4.Parent" xml:space="preserve">
-    <value>group6</value>
+    <value>buttonGroup1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="button3.Label" xml:space="preserve">
     <value>删除</value>
@@ -548,10 +563,22 @@
     <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>group6</value>
+    <value>buttonGroup1</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonGroup1.Name" xml:space="preserve">
+    <value>buttonGroup1</value>
+  </data>
+  <data name="&gt;&gt;buttonGroup1.Type" xml:space="preserve">
+    <value>Microsoft.VisualStudio.Tools.Office.Ribbon.View.ButtonGroupView, Microsoft.VisualStudio.Tools.Office.Designer, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;buttonGroup1.Parent" xml:space="preserve">
+    <value>group6</value>
+  </data>
+  <data name="&gt;&gt;buttonGroup1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="group6.Label" xml:space="preserve">
     <value>文件</value>

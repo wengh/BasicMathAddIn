@@ -33,7 +33,7 @@
     <PublishUrl>C:\Users\user\Documents\Installers\BasicMathAddIn\</PublishUrl>
     <InstallUrl />
     <TargetCulture>zh-chs</TargetCulture>
-    <ApplicationVersion>1.0.0.10</ApplicationVersion>
+    <ApplicationVersion>1.0.0.14</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -221,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dice_80px.png" />
+    <None Include="Resources\Equal Sign_80px.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

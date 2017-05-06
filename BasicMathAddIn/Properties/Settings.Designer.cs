@@ -34,7 +34,7 @@ namespace BasicMathAddIn.Properties {
             "nMuR2VuZXJpYy5LZXlWYWx1ZVBhaXJgMltbU3lzdGVtLlN0cmluZywgbXNjb3JsaWIsIFZlcnNpb249N" +
             "C4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5XSxbQ" +
             "mFzaWNNYXRoQWRkSW4uTWF0aFNldHRpbmdzLCBCYXNpY01hdGhBZGRJbiwgVmVyc2lvbj0xLjAuMC4wL" +
-            "CBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWY3ZDI3M2ZlZjc0NGQ0MTNdXVtdAgAAAAUAA" +
+            "CBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWY3ZDI3M2ZlZjc0NGQ0MTNdXVtdAgAAAAEAA" +
             "AAJAwAAAAMAAAAJBAAAAAQDAAAAkgFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5HZW5lcmljRXF1Y" +
             "WxpdHlDb21wYXJlcmAxW1tTeXN0ZW0uU3RyaW5nLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDd" +
             "Wx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODldXQAAAAAHBAAAAAABA" +
